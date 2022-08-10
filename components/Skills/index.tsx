@@ -1,5 +1,45 @@
 import Image from 'next/image'
 import React from 'react'
+import SkillsList from '../SkillsList'
+interface list {
+  src: string,
+  name: string
+}
+
+const skillsList = [
+  {
+    src: '/../public/assets/skills/html.png',
+    name: "html"
+  },
+  {
+    src: "/../public/assets/skills/css.png",
+    name: "css"
+  },
+  {
+    src: "/../public/assets/skills/tailwind.png",
+    name: "tailwind"
+  },
+  {
+    src: "/../public/assets/skills/Typescript.png",
+    name: "typescript"
+  },
+  {
+    src: "/../public/assets/skills/react.png",
+    name: "react"
+  },
+  {
+    src: "/../public/assets/skills/nextjs.png",
+    name: "next js"
+  },
+  {
+    src: "/../public/assets/skills/node.png",
+    name: "node js"
+  },
+  {
+    src: "/../public/assets/skills/java.png",
+    name: "java"
+  },
+]
 
 const Skills = () => {
   return (
@@ -9,95 +49,9 @@ const Skills = () => {
         <h2 className='capitalize py-4'>what i can do</h2>
   
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/html.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>html</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/css.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>css</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/javascript.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>javascript</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/nextjs.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>next js</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/node.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>node</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/react.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>react</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/java.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>java</h3>
-              </div>
-            </div>
-          </div>
-
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
-            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
-              <div className='m-auto'>
-                <Image src="/../public/assets/skills/tailwind.png" alt="/" width='64px' height='64px'/>
-              </div>
-              <div className='flex flex-col items-center justify-center'>
-                <h3 className='uppercase'>tailwind</h3>
-              </div>
-            </div>
-          </div>
-
+          { skillsList.map(( skills: list, key: number ) => (
+            <SkillsList ImgSrc={ skills.src } tecnology={ skills.name } key={ key } /> 
+          ))}
         </div>
       </div>
     </div>
