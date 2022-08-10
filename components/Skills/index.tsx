@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import React from 'react'
 import SkillsList from '../SkillsList'
 interface list {
   src: string,
