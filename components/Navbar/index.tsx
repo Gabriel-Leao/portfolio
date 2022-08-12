@@ -4,10 +4,29 @@ import { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
   const [nav, setnav] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [navbg, setNavbg] = useState('')
+  const [navcolor, setNavcolor] = useState('')
+  const router = useRouter()
+
+  useEffect(() => {
+    if (
+      router.asPath === '/Property' ||
+      router.asPath === '/Netflix' ||
+      router.asPath === '/Crypto' ||
+      router.asPath === '/Twitch'
+    ) {
+      setNavbg('transparent')
+      setNavcolor('#ecf0f3')
+    } else {
+      setNavbg('#ecf0f3')
+      setNavcolor('#1f2937')
+    }
+  }, [router])
 
   useEffect(() => {
     const handleShadow = () => {
@@ -25,14 +44,20 @@ const Navbar = () => {
   }
 
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
+    <div style={{
+      backgroundColor: `${navbg}`,
+      color: `${navcolor}`
+    }} className={ shadow 
+      ? 'fixed w-full h-20 shadow-xl z-[100]' 
+      : 'fixed w-full h-20 z-[100]'}
+    >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
           <Image src="/../public/assets/navLogo.png" alt="/" width="125" height="50" className='cursor-pointer' />
         </Link>
 
         <div>
-          <ul className='hidden md:flex'>
+          <ul style={{color: `${navcolor}`}} className='hidden md:flex'>
             <Link href="/#home">
               <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>
@@ -69,17 +94,17 @@ const Navbar = () => {
             <div className='flex w-full items-center justify-between'>
               <Image src="/../public/assets/navLogo.png" alt="/" width="87" height="35" />
 
-              <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+              <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer text-[#1f2937]'>
                 <AiOutlineClose />
               </div>
             </div>
 
-            <div className='border-b border-gray-400 my-4'>
+            <div className='border-b border-gray-400 my-4 text-[#1f2937]'>
               <p className='w-[85%] md:w-[90%] py-4'>Let’s build something legendary together</p>
             </div>
           </div>
 
-          <div className='py-4 flex flex-col'>
+          <div className='py-4 flex flex-col text-[#1f2937]'>
             <ul className='uppercase'>
               <Link href="/#home">
                 <li onClick={() => setnav(false)} className='py-4 text-sm'>Home</li>
