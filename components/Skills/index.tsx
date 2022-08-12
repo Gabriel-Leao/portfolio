@@ -6,7 +6,7 @@ import typescriptImg from '../../public/assets/skills/Typescript.png'
 import reactImg from '../../public/assets/skills/react.png'
 import nextjsImg from '../../public/assets/skills/nextjs.png'
 import nodeImg from '../../public/assets/skills/node.png'
-import javaImg from '../../public/assets/skills/html.png'
+import javaImg from '../../public/assets/skills/java.png'
 import { list } from '../../interfaces'
 
 const skillsList = [
