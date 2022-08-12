@@ -1,13 +1,6 @@
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-
-interface projectItem {
-  imgSrc: StaticImageData,
-  link: string,
-  title: string,
-  subTitle: string
-}
+import { projectItem } from '../../../interfaces'
 
 const ProjectItem = ({ imgSrc, link, title, subTitle }: projectItem) => {
   return (

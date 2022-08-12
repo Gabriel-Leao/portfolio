@@ -1,50 +1,46 @@
-import { StaticImageData } from 'next/image'
 import SkillsList from '../SkillsList'
-import htmlImg from '/../public/assets/skills/html.png'
-import cssImg from '/../public/assets/skills/css.png'
-import tailwindImg from '/../public/assets/skills/tailwind.png'
-import typescriptImg from '/../public/assets/skills/Typescript.png'
-import reactImg from '/../public/assets/skills/react.png'
-import nextjsImg from '/../public/assets/skills/nextjs.png'
-import nodeImg from '/../public/assets/skills/node.png'
-import javaImg from '/../public/assets/skills/html.png'
-interface list {
-  src: StaticImageData,
-  name: string
-}
+import htmlImg from '../../public/assets/skills/html.png'
+import cssImg from '../../public/assets/skills/css.png'
+import tailwindImg from '../../public/assets/skills/tailwind.png'
+import typescriptImg from '../../public/assets/skills/Typescript.png'
+import reactImg from '../../public/assets/skills/react.png'
+import nextjsImg from '../../public/assets/skills/nextjs.png'
+import nodeImg from '../../public/assets/skills/node.png'
+import javaImg from '../../public/assets/skills/html.png'
+import { list } from '../../interfaces'
 
 const skillsList = [
   {
-    src: htmlImg,
-    name: "html"
+    ImgSrc: htmlImg,
+    tecnology: "html"
   },
   {
-    src: cssImg,
-    name: "css"
+    ImgSrc: cssImg,
+    tecnology: "css"
   },
   {
-    src: tailwindImg,
-    name: "tailwind"
+    ImgSrc: tailwindImg,
+    tecnology: "tailwind"
   },
   {
-    src: typescriptImg,
-    name: "typescript"
+    ImgSrc: typescriptImg,
+    tecnology: "typescript"
   },
   {
-    src: reactImg,
-    name: "react"
+    ImgSrc: reactImg,
+    tecnology: "react"
   },
   {
-    src: nextjsImg,
-    name: "next js"
+    ImgSrc: nextjsImg,
+    tecnology: "next js"
   },
   {
-    src: nodeImg,
-    name: "node js"
+    ImgSrc: nodeImg,
+    tecnology: "node js"
   },
   {
-    src: javaImg,
-    name: "java"
+    ImgSrc: javaImg,
+    tecnology: "java"
   },
 ]
 
@@ -57,7 +53,7 @@ const Skills = () => {
   
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           { skillsList.map(( skills: list, key: number ) => (
-            <SkillsList ImgSrc={ skills.src } tecnology={ skills.name } key={ key } /> 
+            <SkillsList ImgSrc={ skills.ImgSrc } tecnology={ skills.tecnology } key={ key } /> 
           ))}
         </div>
       </div>

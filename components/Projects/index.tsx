@@ -4,36 +4,29 @@ import propertyImg from '../../public/assets/projects/property.jpg'
 import cryptoImg from '../../public/assets/projects/crypto.jpg'
 import netflixImg from '../../public/assets/projects/netflix.jpg'
 import twitchImg from '../../public/assets/projects/property.jpg'
-import { StaticImageData } from 'next/image'
-
-interface projectItem {
-  link: string,
-  title: string,
-  subTitle: string,
-  img: StaticImageData
-}
+import { projectItem } from '../../interfaces'
 
 const projectList = [
   {
-    img: propertyImg,
+    imgSrc: propertyImg,
     title: "property finder",
     subTitle: "react js",
     link: "/Property"
   },
   {
-    img: cryptoImg,
+    imgSrc: cryptoImg,
     title: "crypto app",
     subTitle: "react js",
     link: "/Crypto"
   },
   {
-    img: netflixImg,
+    imgSrc: netflixImg,
     title: "netflix",
     subTitle: "react js",
     link: "/Netflix"
   },
   {
-    img: twitchImg,
+    imgSrc: twitchImg,
     title: "twitch",
     subTitle: "react js",
     link: "/Twitch"
@@ -48,7 +41,7 @@ const Projects = () => {
         <h2 className="py-4 capitalize">what i’ve built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           { projectList.map(( item: projectItem, key: number ) => (
-            <ProjectItem key={ key } imgSrc={ item.img } title={ item.title } link={ item.link } subTitle={ item.subTitle }/>
+            <ProjectItem key={ key } imgSrc={ item.imgSrc } title={ item.title } link={ item.link } subTitle={ item.subTitle }/>
           ))}
         </div>
       </div>

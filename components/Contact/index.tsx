@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 import ContactImg from '../../public/assets/contact.jpg'
 import { AiOutlineMail } from 'react-icons/ai'
