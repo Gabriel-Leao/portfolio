@@ -1,40 +1,49 @@
+import { StaticImageData } from 'next/image'
 import SkillsList from '../SkillsList'
+import htmlImg from '/../public/assets/skills/html.png'
+import cssImg from '/../public/assets/skills/css.png'
+import tailwindImg from '/../public/assets/skills/tailwind.png'
+import typescriptImg from '/../public/assets/skills/Typescript.png'
+import reactImg from '/../public/assets/skills/react.png'
+import nextjsImg from '/../public/assets/skills/nextjs.png'
+import nodeImg from '/../public/assets/skills/node.png'
+import javaImg from '/../public/assets/skills/html.png'
 interface list {
-  src: string,
+  src: StaticImageData,
   name: string
 }
 
 const skillsList = [
   {
-    src: '/../public/assets/skills/html.png',
+    src: htmlImg,
     name: "html"
   },
   {
-    src: "/../public/assets/skills/css.png",
+    src: cssImg,
     name: "css"
   },
   {
-    src: "/../public/assets/skills/tailwind.png",
+    src: tailwindImg,
     name: "tailwind"
   },
   {
-    src: "/../public/assets/skills/Typescript.png",
+    src: typescriptImg,
     name: "typescript"
   },
   {
-    src: "/../public/assets/skills/react.png",
+    src: reactImg,
     name: "react"
   },
   {
-    src: "/../public/assets/skills/nextjs.png",
+    src: nextjsImg,
     name: "next js"
   },
   {
-    src: "/../public/assets/skills/node.png",
+    src: nodeImg,
     name: "node js"
   },
   {
-    src: "/../public/assets/skills/java.png",
+    src: javaImg,
     name: "java"
   },
 ]
