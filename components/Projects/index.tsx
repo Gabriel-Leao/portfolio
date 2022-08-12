@@ -18,25 +18,25 @@ const projectList = [
     img: propertyImg,
     title: "property finder",
     subTitle: "react js",
-    link: "/"
+    link: "/Property"
   },
   {
     img: cryptoImg,
     title: "crypto app",
     subTitle: "react js",
-    link: "/"
+    link: "/Crypto"
   },
   {
     img: netflixImg,
     title: "netflix",
     subTitle: "react js",
-    link: "/"
+    link: "/Netflix"
   },
   {
     img: twitchImg,
     title: "twitch",
     subTitle: "react js",
-    link: "/"
+    link: "/Twitch"
   },
 ]
 
