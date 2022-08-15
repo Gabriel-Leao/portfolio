@@ -10,7 +10,7 @@ const ProjectItem = ({ imgSrc, link, title, subTitle }: projectItem) => {
         <h3 className="uppercase text-2xl text-[#fff] text-center tracking-wider">{ title }</h3>
         <p className="capitalize pb-4 pt-2 text-[#fff] text-center">{ subTitle }</p>
         <Link href={ link }>
-          <p className="text-center py-3 rounded-lg bg-[#fff] text-gray-700 font-bold text-lg cursor-pointer w-[220px]">More Info</p>
+          <p className="text-center py-3 rounded-lg bg-[#fff] text-gray-700 font-bold text-lg cursor-pointer min-w-[220px]">Mais Informações</p>
         </Link>
       </div>
     </div>

@@ -49,7 +49,7 @@ const Skills = () => {
     <div className='w-full lg:h-screen p-2' id='skills'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>skills</p>
-        <h2 className='capitalize py-4'>what i can do</h2>
+        <h2 className='capitalize py-4'>o que eu posso fazer</h2>
   
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           { skillsList.map(( skills: list, key: number ) => (

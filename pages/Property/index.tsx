@@ -17,7 +17,7 @@ const Property = () => {
 
       <div className='max-w[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
-          <p>Project</p>
+          <p>Projeto</p>
           <h2>Overview</h2>
           <p>This app was built using React JS and is hosted on Firebase. Users
             are able to search properties based on an Address, City, or ZIP code
@@ -63,7 +63,7 @@ const Property = () => {
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
+          <p className='underline cursor-pointer'>voltar</p>
         </Link>
       </div>
     </div>

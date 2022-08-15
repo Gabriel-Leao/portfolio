@@ -17,7 +17,7 @@ const Twitch = () => {
 
       <div className='max-w[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
-          <p>Project</p>
+          <p>Projeto</p>
           <h2>Overview</h2>
           <p>This appplication was built using NEXT.JS and is styled with
             Tailwind CSS. The application is hosted statically using Vercel.
@@ -62,7 +62,7 @@ const Twitch = () => {
           </div>
         </div>
         <Link href='/#projects'>
-          <p className='underline cursor-pointer'>Back</p>
+          <p className='underline cursor-pointer'>voltar</p>
         </Link>
       </div>
     </div>

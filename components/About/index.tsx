@@ -7,33 +7,24 @@ const About = () => {
     <div className="w-full md:h-screen p-2 flex items-center py-16" id="about">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">About</p>
+          <p className="uppercase text-xl tracking-widest text-[#5651e5]">sobre</p>
 
-          <h2 className="py-4">Who i am</h2>
+          <h2 className="py-4 capitalize">quem sou eu</h2>
 
-          <p className="py-2 text-gray-600">I am not your average developer</p>
+          <p className="py-2 text-gray-600">Eu não sou seu desenvolvedor comum</p>
 
           <p className="py-2 text-gray-600">
-
-            I have spent the last 12 years in the fire service working as a
-            professional firefighter/paramedic. I have always had a knack for
-            technology and working with computers. In 2019 I started working
-            with HTML and CSS to make some minor edits on a small business
-            website that I was operating. What I thought was just a few small
-            edits turned into a love for programming.
+            Sou uma pessoa tranquila e introvertida que gosta muito de Livros, Video Games e Rock N Roll. Já fui estagiário na Caixa Econômica Federal, foi a minha primeira experiência profissional e onde pude aprender muito sobre o funcionamento da organização, Hierarquia, pontualidade e também no trato com as pessoas, mas hoje pretendo ser um programador Web. 
           </p>
 
           <p className="py-2 text-gray-600">
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I then started
-            freelancing for e-commerce companies on the Shopify platform. I am
-            now spending my time building projects with React JS, Firebase, and
-            learning new technologies.
+            Fui aluno no Instituto Proa, fiz o curso PROPROFISSÃO que durante 4 meses desenvolve as competências técnicas e comportamentais essenciais para desenvolvedores.
+            Durante ele pude aprender: Comunicação assertiva, HTML, CSS, Javascript, React, Banco de Dados, Java.
+            Essas competências foram desenvolvidas por meio de trabalhos em grupos, projetos e atividades.
           </p>
           
           <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">Check out some of my latest projects.</p>
+            <p className="py-2 text-gray-600 underline cursor-pointer">Veja alguns dos meus últimos projetos.</p>
           </Link>
         </div>
 

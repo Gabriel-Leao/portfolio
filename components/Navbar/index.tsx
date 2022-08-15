@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
-import logoImg from '../../public/assets/navLogo.png'
+import logoImg from '../../public/assets/foto-perfil.png'
 
 const Navbar = () => {
   const [nav, setnav] = useState(false)
@@ -54,30 +54,34 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <Image src={logoImg} alt="/" width="125" height="50" className='cursor-pointer' />
+          <Image src={logoImg} alt="/" width="80" height="80" className='cursor-pointer' />
         </Link>
 
         <div>
           <ul style={{color: `${navcolor}`}} className='hidden md:flex'>
-            <Link href="/#home">
-              <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
-            </Link>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/#home">Home</Link>
+            </li>
 
-            <Link href="/#about">
-              <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
-            </Link>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/#about">sobre</Link>
+            </li>
 
-            <Link href="/#skills">
-              <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
-            </Link>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/#skills">Skills</Link>
+            </li>
 
-            <Link href="/#projects">
-              <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
-            </Link>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/#projects">Projetos</Link>
+            </li>
 
-            <Link href="/#contact">
-              <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
-            </Link>
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/Resume">Currículo</Link>
+            </li>
+
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/#contact">Contato</Link>
+            </li>
           </ul>
 
           <div onClick={handleNav} className='md:hidden'>
@@ -94,7 +98,7 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <Image src={logoImg} alt="/" width="87" height="35" />
+                <Image src={logoImg} alt="/" width="80" height="80" onClick={() => setnav(false)} />
               </Link>
 
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer text-[#1f2937]'>
@@ -103,7 +107,7 @@ const Navbar = () => {
             </div>
 
             <div className='border-b border-gray-400 my-4 text-[#1f2937]'>
-              <p className='w-[85%] md:w-[90%] py-4'>Let’s build something legendary together</p>
+              <p className='w-[85%] md:w-[90%] py-4'>Vamos construir algo lendário juntos</p>
             </div>
           </div>
 
@@ -114,7 +118,11 @@ const Navbar = () => {
               </Link>
 
               <Link href="/#about">
-                <li onClick={() => setnav(false)} className='py-4 text-sm'>About</li>
+                <li onClick={() => setnav(false)} className='py-4 text-sm'>Sobre</li>
+              </Link>
+
+              <Link href="/Resume">
+                <li onClick={() => setnav(false)} className='py-4 text-sm'>Currículo</li>
               </Link>
 
               <Link href="/#skills">
@@ -122,30 +130,41 @@ const Navbar = () => {
               </Link>
 
               <Link href="/#projects">
-                <li onClick={() => setnav(false)} className='py-4 text-sm'>Projects</li>
+                <li onClick={() => setnav(false)} className='py-4 text-sm'>Projetos</li>
               </Link>
 
               <Link href="/#contact">
-                <li onClick={() => setnav(false)} className='py-4 text-sm'>Contact</li>
+                <li onClick={() => setnav(false)} className='py-4 text-sm'>Contato</li>
               </Link>
             </ul>
 
             <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#5651e5]'>Let&apos;s Connect</p>
+              <p className='uppercase tracking-widest text-[#5651e5]'>vamos nos conectar</p>
 
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaGithub />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <AiOutlineMail />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <BsPersonLinesFill />
-                </div>
+                <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+
+                <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <FaGithub />
+                  </div>
+                </a>
+
+                <Link href="/#contact">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+
+                <Link href="/Resume">
+                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                    <BsPersonLinesFill />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
