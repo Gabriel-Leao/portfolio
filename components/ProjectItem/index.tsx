@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { projectItem } from '../../../interfaces'
+import { projectItem } from '../../interfaces'
 
 const ProjectItem = ({ imgSrc, link, title, subTitle }: projectItem) => {
   return (
