@@ -60,33 +60,33 @@ const Contact = () => {
 
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
             <div className='p-4'>
-              <form>
+              <form action='https://getform.io/f/6b9a7436-40d0-4df5-9e8b-33d63f60c48a' method='POST'>
                 <div className='grid md:grid-cols-2 gap-4 py-2 w-full'>
 
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>nome</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" />
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='nome'/>
                   </div>
 
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>número de telefone</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" />
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='númeroTelefone'/>
                   </div>
                 </div>
 
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>e-mail</label>
-                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="email" />
+                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="email" autoComplete='off' name='email'/>
                 </div>
 
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>assunto</label>
-                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" />
+                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='assunto'/>
                 </div>
 
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>messagem</label>
-                  <textarea className='border-2 rounded-lg p-3 border-gray-300 focus:outline-none' rows={10}></textarea>
+                  <textarea className='border-2 rounded-lg p-3 border-gray-300 focus:outline-none' rows={10} name='mensagem'></textarea>
                 </div>
 
                 <button className='w-full p-4 text-gray-100 mt-4'>enviar</button>

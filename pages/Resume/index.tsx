@@ -11,23 +11,23 @@ const Resume = () => {
           name='description'
           content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
         />
-        <link rel='icon' href='/fav.png' />
+        <link rel='icon' href='/assets/foto-perfil.png' />
       </Head>
 
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
-        <h2 className='text-center'>Resume</h2>
+        <h2 className='text-center'>Currículo</h2>
         <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Clint Briley</h2>
+          <h2 className='text-center'>Gabriel Leão da Silva</h2>
           <div className='flex'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/leao-gabriel/'
               target='_blank'
               rel='noreferrer'
             >
               <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/gabriel-leao'
               target='_blank'
               rel='noreferrer'
             >
@@ -69,12 +69,7 @@ const Resume = () => {
             <span className='px-2'>|</span> HTML <span className='px-2'>|</span>
             CSS <span className='px-2'>|</span>React
             <span className='px-2'>|</span>Tailwind
-            <span className='px-2'>|</span> Firebase
-          </p>
-          <p className='py-2'>
-            <span className='font-bold'>Amazon Web Services</span>
-            <span className='px-2'>|</span>Amazon Web Services Cloud
-            Practitioner
+            <span className='px-2'>|</span> Next.JS
           </p>
         </div>
 
