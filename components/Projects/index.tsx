@@ -1,7 +1,7 @@
 import propertyImg from '../../public/assets/projects/property.jpg'
-import cryptoImg from '../../public/assets/projects/crypto.jpg'
+import cepImg from '../../public/assets/projects/cep.png'
 import netflixImg from '../../public/assets/projects/netflix.jpg'
-import twitchImg from '../../public/assets/projects/property.jpg'
+import twitchImg from '../../public/assets/projects/twitch.jpg'
 import { projectItem } from '../../interfaces'
 import ProjectItem from '../ProjectItem'
 
@@ -10,25 +10,25 @@ const projectList = [
     imgSrc: propertyImg,
     title: "property finder",
     subTitle: "react js",
-    link: "/Property"
+    link: "/property"
   },
   {
-    imgSrc: cryptoImg,
-    title: "crypto app",
+    imgSrc: cepImg,
+    title: "busca cep",
     subTitle: "react js",
-    link: "/Crypto"
+    link: "/cep"
   },
   {
     imgSrc: netflixImg,
     title: "netflix",
     subTitle: "react js",
-    link: "/Netflix"
+    link: "/netflix"
   },
   {
     imgSrc: twitchImg,
     title: "twitch",
     subTitle: "react js",
-    link: "/Twitch"
+    link: "/twitch"
   },
 ]
 

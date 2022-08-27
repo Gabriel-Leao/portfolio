@@ -11,24 +11,25 @@ const Netflix = () => {
         <Image className='absolute z-1' src={netflixImg} layout='fill' objectFit='cover' alt='/' />
         <div className='absolute top-[70%] max-w[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-[#fff] p-2 z-10'>
           <h2 className='capitalize py-2'>netflix app</h2>
-          <h3 className='capitalize'>react JS / tailwind / firebase</h3>
+          <h3 className='capitalize'>react JS / stitches / firebase</h3>
         </div>
       </div>
 
       <div className='max-w[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
           <p>Projeto</p>
-          <h2>Overview</h2>
-          <p>I built this application in React JS and is hosted on GitHub pages.
-            This app features user authentication with firebase as well as the
-            firestore cloud storage database. This application is pulling movie
-            data from an the IMDB movie API and displaying different categories.
-            It features horizontal sliding and a featured selection. The
-            useContext hook is also being implemented for app-wide state
-            management.
+          <h2 className='py-4'>Overview</h2>
+          <p className='py-2'>Construí esse site utilizando o framework Vite, junto com a ferramenta de CSS-in-JS Stitches.
+          Nela pude utilizar a API do The Movie Database.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Code</button>
+          
+          <a href="https://clone-netflix-rose.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
+
+          <a href="https://github.com/Gabriel-Leao/PROA/tree/main/React/Clone-NetflixV1" target="_blank" rel="noopener noreferrer">
+            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
@@ -40,19 +41,15 @@ const Netflix = () => {
               </p>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                tailwind
+                stitches
               </p>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                javascript
+                Typescript
               </p>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                firebase
-              </p>
-              <p className='text-gray-600 py-2 flex items-center capitalize'>
-                <RiRadioButtonFill className='pr-1'/>
-                IMDB API
+                TMDB API
               </p>
             </div>
           </div>

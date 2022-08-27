@@ -31,9 +31,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true)
-      } else setShadow(false)
+      if (window.scrollY >= 90) setShadow(true)
+      else setShadow(false)
     }
 
     window.addEventListener('scroll', handleShadow)
@@ -76,7 +75,7 @@ const Navbar = () => {
             </li>
 
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href="/Resume">Currículo</Link>
+              <Link href="/resume">Currículo</Link>
             </li>
 
             <li className='ml-10 text-sm uppercase hover:border-b'>
@@ -121,7 +120,7 @@ const Navbar = () => {
                 <li onClick={() => setnav(false)} className='py-4 text-sm'>Sobre</li>
               </Link>
 
-              <Link href="/Resume">
+              <Link href="/resume">
                 <li onClick={() => setnav(false)} className='py-4 text-sm'>Currículo</li>
               </Link>
 
@@ -160,7 +159,7 @@ const Navbar = () => {
                   </div>
                 </Link>
 
-                <Link href="/Resume">
+                <Link href="/resume">
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <BsPersonLinesFill />
                   </div>
