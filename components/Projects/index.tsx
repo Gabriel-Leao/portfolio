@@ -1,16 +1,16 @@
-import propertyImg from '../../public/assets/projects/property.jpg'
+import rickMortyImg from '../../public/assets/projects/rick-morty.png'
 import cepImg from '../../public/assets/projects/cep.png'
 import netflixImg from '../../public/assets/projects/netflix.jpg'
-import twitchImg from '../../public/assets/projects/twitch.jpg'
+// import twitchImg from '../../public/assets/projects/twitch.jpg'
 import { projectItem } from '../../interfaces'
 import ProjectItem from '../ProjectItem'
 
 const projectList = [
   {
-    imgSrc: propertyImg,
-    title: "property finder",
+    imgSrc: rickMortyImg,
+    title: "Squanchy",
     subTitle: "react js",
-    link: "/property"
+    link: "/rick-morty"
   },
   {
     imgSrc: cepImg,
@@ -24,12 +24,12 @@ const projectList = [
     subTitle: "react js",
     link: "/netflix"
   },
-  {
-    imgSrc: twitchImg,
-    title: "twitch",
-    subTitle: "react js",
-    link: "/twitch"
-  },
+  // {
+  //   imgSrc: twitchImg,
+  //   title: "twitch",
+  //   subTitle: "react js",
+  //   link: "/twitch"
+  // },
 ]
 
 const Projects = () => {
