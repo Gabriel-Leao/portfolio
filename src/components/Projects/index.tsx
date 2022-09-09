@@ -1,7 +1,7 @@
-import rickMortyImg from '../../public/assets/projects/rick-morty.png'
-import cepImg from '../../public/assets/projects/cep.png'
-import netflixImg from '../../public/assets/projects/netflix.jpg'
-// import twitchImg from '../../public/assets/projects/twitch.jpg'
+import rickMortyImg from '../../../public/assets/projects/rick-morty.png'
+import cepImg from '../../../public/assets/projects/cep.png'
+import netflixImg from '../../../public/assets/projects/netflix.jpg'
+// import twitchImg from '../../../public/assets/projects/twitch.jpg'
 import { projectItem } from '../../interfaces'
 import ProjectItem from '../ProjectItem'
 

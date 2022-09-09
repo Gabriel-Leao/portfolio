@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import rickMortyImg from '../../public/assets/projects/rick-morty.png'
+import rickMortyImg from '../../../public/assets/projects/rick-morty.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
@@ -18,8 +18,8 @@ const RickMorty = () => {
       <div className='max-w[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
           <p>Projeto</p>
-          <h2>Overview</h2>
-          <p>
+          <h2 className='py-4'>Overview</h2>
+          <p className='py-2'>
             Este site foi criado utilizando a API do Rick and Morty. <br />
             Na página inicial você pode ver todos os personagens disponibilizados em cards, com algumas páginas, dá para procurar por um personagem específico através da barra de pesquisa ou utilizar alguns dos filtros. Ao clicar no card é aberta uma página com mais informações sobre o personagem. Além disso tem uma página com todos os episódios, nela você pode ver o nome em inglês, a data do lançamento, e os personagens do episódio. Na página de localização podemos ver a localização, a dimensão e o tipo dela, além disso podemos ver todos os personagens que vivem nesta localização.
           </p>

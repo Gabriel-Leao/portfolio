@@ -1,4 +1,3 @@
-import React from 'react';
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
@@ -6,7 +5,7 @@ const Resume = () => {
   return (
     <>
       <Head>
-        <title>Clint | Resume</title>
+        <title>Gabriel Leão | Currículo</title>
         <meta
           name='description'
           content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'

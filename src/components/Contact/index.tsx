@@ -5,7 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import ContactImg from '../../public/assets/contact.jpg'
+import ContactImg from '../../../public/assets/contact.jpg'
 
 const Contact = () => {
   return (
@@ -64,7 +64,7 @@ const Contact = () => {
                 <div className='grid md:grid-cols-2 gap-4 py-2 w-full'>
 
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>nome</label>
+                    <label className='uppercase text-sm py-2'>nome completo</label>
                     <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='nome'/>
                   </div>
 

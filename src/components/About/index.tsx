@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import aboutImg from "../../public/assets/about.jpg"
+import aboutImg from "../../../public/assets/about.jpg"
 
 const About = () => {
   return (

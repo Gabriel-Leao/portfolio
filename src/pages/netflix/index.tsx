@@ -1,34 +1,35 @@
 import Image from 'next/image'
-import twitchImg from '../../public/assets/projects/twitch.jpg'
+import netflixImg from '../../../public/assets/projects/netflix.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
-const Twitch = () => {
+const Netflix = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
-        <Image className='absolute z-1' src={twitchImg} layout='fill' objectFit='cover' alt='/' />
+        <Image className='absolute z-1' src={netflixImg} layout='fill' objectFit='cover' alt='/' />
         <div className='absolute top-[70%] max-w[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-[#fff] p-2 z-10'>
-          <h2 className='capitalize py-2'>twitch UI</h2>
-          <h3 className='capitalize'>next JS / tailwind / next auth</h3>
+          <h2 className='capitalize py-2'>netflix app</h2>
+          <h3 className='capitalize'>react JS / stitches / firebase</h3>
         </div>
       </div>
 
       <div className='max-w[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
           <p>Projeto</p>
-          <h2>Overview</h2>
-          <p>This appplication was built using NEXT.JS and is styled with
-            Tailwind CSS. The application is hosted statically using Vercel.
-            This is a mobile responsive recreation of Twitch.tv and features
-            Next/Auth.js for authentication. Users may choose to be
-            authenticated with either a Github account or a Google account. A
-            few features to note with this project are lazy loading images using
-            the Image component, built in routing, and Next/Auth Context.
+          <h2 className='py-4'>Overview</h2>
+          <p className='py-2'>Construí esse site utilizando o framework Vite, junto com a ferramenta de CSS-in-JS Stitches.
+          Nela pude utilizar a API do The Movie Database.
           </p>
-          <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
-          <button className='px-8 py-2 mt-4'>Code</button>
+          
+          <a href="https://clone-netflix-rose.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
+          </a>
+
+          <a href="https://github.com/Gabriel-Leao/PROA/tree/main/React/Clone-NetflixV1" target="_blank" rel="noopener noreferrer">
+            <button className='px-8 py-2 mt-4 mr-8'>Code</button>
+          </a>
         </div>
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
           <div className='p-2'>
@@ -36,27 +37,19 @@ const Twitch = () => {
             <div className='grid grid-cols-3 md:grid-cols-1'>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                next.js
+                React
               </p>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                tailwind
+                stitches
               </p>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                javascript
+                Typescript
               </p>
               <p className='text-gray-600 py-2 flex items-center capitalize'>
                 <RiRadioButtonFill className='pr-1'/>
-                next auth
-              </p>
-              <p className='text-gray-600 py-2 flex items-center capitalize'>
-                <RiRadioButtonFill className='pr-1'/>
-                google auth
-              </p>
-              <p className='text-gray-600 py-2 flex items-center capitalize'>
-                <RiRadioButtonFill className='pr-1'/>
-                github Auth
+                TMDB API
               </p>
             </div>
           </div>
@@ -69,4 +62,4 @@ const Twitch = () => {
   )
 }
 
-export default Twitch
+export default Netflix
