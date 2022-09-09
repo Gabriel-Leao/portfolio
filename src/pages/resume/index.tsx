@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Head from 'next/head'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Resume = () => {
   return (
@@ -34,140 +34,71 @@ const Resume = () => {
             </a>
           </div>
         </div>
+
         <div className='text-center py-4 text-xl font-bold uppercase tracking-wider'>
-          <div className='hidden sm:block'>
-            <p>
-              Proven Leadership <span className='px-1'>|</span> Web Development{' '}
-              <span className='px-1'>|</span> Complex Problem Solving
-            </p>
-          </div>
-          <div className='block sm:hidden'>
-            <p>Proven Leadership</p>
-            <p className='py-2'>Web Development</p>
-            <p>Complex Problem Solving</p>
-          </div>
+          <p className='capitalize'>front-end developer JR.</p>
         </div>
+
         <p>
-          Analytical, innovative, and motivated web development professional
-          with experience in customer service, team leadership, and
-          organizational effectiveness in fast-paced and challenging
-          environments. Adept at developing strategies and driving streamlined
-          operations. Diverse analytical skills, team collaboration, and
-          relationship building. Consummate professional, and motivated leader,
-          with solid interpersonal abilities and complex problem-solving skills.
-          Effective and proven track record of critical thinking, idea
-          generation, and optimizing efficiencies.
+        Olá meu nome é Gabriel Leão e se você está procurando por um programador, você veio ao lugar certo. <br /> <br />
+        Toda empresa precisa de pessoas competentes e comunicativas, por isso eu tenho certeza que posso contribuir para o crescimento, aumento de produtividade e de lucro da sua instituição. Entre em contato e poderemos falar mais sobre.
         </p>
 
         {/* Skills */}
         <div className='text-center py-4'>
           <h5 className='text-center underline text-[18px] py-2'>Skills</h5>
           <p className='py-2'>
-            <span className='font-bold'>Technical Skills</span>
+            <span className='font-bold'>Hard Skills</span>
             <span className='px-2'>|</span>Front-End Web Developer
             <span className='px-2'>|</span> HTML <span className='px-2'>|</span>
             CSS <span className='px-2'>|</span>React
             <span className='px-2'>|</span>Tailwind
             <span className='px-2'>|</span> Next.JS
           </p>
+
+          <p className='py-2'>
+            <span className='font-bold'>Soft Skills</span>
+            <span className='px-2'>|</span>Flexibilidade
+            <span className='px-2'>|</span> Trabalho em equipe <span className='px-2'>|</span>
+            Determinação <span className='px-2'>|</span>Comunicação
+            <span className='px-2'>|</span>Empatia
+          </p>
         </div>
 
         <h5 className='text-center underline text-[18px] py-4'>
-          Professional Experience
+          Experiência profissional
         </h5>
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-              BIGCOMMERCE, SHOPIFY, WOOCOMMERCE
+              Caixa Econômica Federal
             </span>
-            <span className='px-2'>|</span>Dallas, TX
+            <span className='px-2'>|</span>São Bernardo do Campo, SP
           </p>
-          <p className='py-1 italic'>Freelance Work (2013 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
-            </li>
-            <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
-            </li>
-            <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
-            </li>
-            <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
-            </li>
-          </ul>
+          <p className='py-1 italic font-bold'>Estágiario, (Maio 2021 — Dezembro 2021)</p>
+          <p>Atender os clientes, digitalização de documentos. <br />
+            Foi a minha primeira experiência profissional e onde pude aprender muito sobre o funcionamento da organização, Hierarquia, pontualidade e também no trato com as pessoas.</p>
         </div>
+
+        <h5 className='text-center underline text-[18px] py-4'>
+          Formação
+        </h5>
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold'>Preston EMS</span>
-            <span className='px-2'>|</span>Grayson County, TX
+            <span className='font-bold italic'>
+              Instituto Proa
+            </span>
+            <span className='px-2'>|</span>São Paulo, SP
           </p>
-          <p className='py-1 italic'>Paramedic (2019 - Current)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Lead paramedic on an ALS 911 ambulance covering rural Grayson
-              County.
-            </li>
-            <li>
-              Work surrounding departments organizing treatment protocols and
-              facilitate hands on training operations.
-            </li>
-            <li>
-              Manage high stress 911 situations such as medical emergencies,
-              traumatic emergencies, and water accidents
-            </li>
-            <li>
-              Public outreach and relations for the municipality from healthcare
-              awareness to training methods.
-            </li>
-          </ul>
-        </div>
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold'>CITY OF SHERMAN, TX</span>
-            <span className='px-2'>|</span>Sherman, TX
-          </p>
-          <p className='py-1 italic'>Paramedic / Firefighter (2010 – 2019)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured proper implementation of firefighting techniques and
-              practices including controlling and extinguishing fires, operating
-              hose lines, and fire ground operations, ventilation, and search
-              and rescue.
-            </li>
-            <li>
-              Oversaw comprehensive understanding, operation, and maintenance of
-              fire engines, ladder trucks, technical rescue apparatus, and
-              response trailers.
-            </li>
-            <li>
-              Performed ALS techniques as needed within emergency situations
-              including the use of an esophageal or dual lumen airway device and
-              oral intubation using laryngoscopy.
-            </li>
-            <li>
-              Collaborated with a talented and high performing team of
-              firefighters in high pressure and stressful situations as needed.
-            </li>
-            <li>
-              Utilized proven and demonstrated knowledge of multiple
-              certifications including Pediatric Advanced Life Support,
-              Prehospital Trauma Life Support, and Advanced Cardiac Life
-              Support, among others.
-            </li>
-          </ul>
+          <p className='py-1 italic font-bold'>Profissionalizante, (Fevereiro 2022 — Julho 2022)</p>
+          <p>Durante 6 meses foram desenvolvidas as competências técnicas e comportamentais essenciais para desenvolvedores e todos os tipos de profissionais. <br />
+          Durante ele pude aprender: Comunicação assertiva, HTML, CSS, Javascript, React, Banco de Dados, Java. Essas competências foram desenvolvidas por meio de trabalhos em grupos, projetos e atividades.</p>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Resume;
+export default Resume
