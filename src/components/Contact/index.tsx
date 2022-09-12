@@ -30,25 +30,25 @@ const Contact = () => {
                 <p className='pt-8 uppercase'>conecte-se comigo</p>
 
                 <div className='flex items-center justify-between py-4'>
-                  <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer">
+                  <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer" aria-label='Linkedin'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <FaLinkedinIn />
                     </div>
                   </a>
 
-                  <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank">
+                  <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <FaGithub />
                     </div>
                   </a>
 
-                  <a href="mailto:gabriel.2507@gmail.com">
+                  <a href="mailto:gabriel.2507@gmail.com" aria-label='e-mail'>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <AiOutlineMail />
                     </div>
                   </a>
 
-                  <Link href="/Resume">
+                  <Link href="/resume">
                     <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <BsPersonLinesFill />
                     </div>
@@ -64,29 +64,29 @@ const Contact = () => {
                 <div className='grid md:grid-cols-2 gap-4 py-2 w-full'>
 
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>nome completo</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='nome'/>
+                    <label className='uppercase text-sm py-2' htmlFor='name'>nome completo</label>
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='nome' id='name'/>
                   </div>
 
                   <div className='flex flex-col'>
-                    <label className='uppercase text-sm py-2'>número de telefone</label>
-                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='númeroTelefone'/>
+                    <label className='uppercase text-sm py-2' htmlFor='phone'>número de telefone</label>
+                    <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='númeroTelefone' id='phone'/>
                   </div>
                 </div>
 
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>e-mail</label>
-                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="email" autoComplete='off' name='email'/>
+                  <label className='uppercase text-sm py-2' htmlFor='e-mail'>e-mail</label>
+                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="email" autoComplete='off' name='email' id='e-mail'/>
                 </div>
 
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>assunto</label>
-                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='assunto'/>
+                  <label className='uppercase text-sm py-2' htmlFor='subject'>assunto</label>
+                  <input className='border-2 rounded-lg p-3 flex border-gray-300 focus:outline-none' type="text" autoComplete='off' name='assunto' id='subject'/>
                 </div>
 
                 <div className='flex flex-col py-2'>
-                  <label className='uppercase text-sm py-2'>messagem</label>
-                  <textarea className='border-2 rounded-lg p-3 border-gray-300 focus:outline-none' rows={10} name='mensagem'></textarea>
+                  <label className='uppercase text-sm py-2' htmlFor='text'>messagem</label>
+                  <textarea className='border-2 rounded-lg p-3 border-gray-300 focus:outline-none' rows={10} name='mensagem' id='text'></textarea>
                 </div>
 
                 <button className='w-full p-4 text-gray-100 mt-4'>enviar</button>

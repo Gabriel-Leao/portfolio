@@ -53,7 +53,7 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <Image src={logoImg} alt="/" width="80" height="80" className='cursor-pointer' />
+          <Image src={logoImg} alt="/" width='80' height='80' className='cursor-pointer' />
         </Link>
 
         <div>
@@ -74,12 +74,12 @@ const Navbar = () => {
               <Link href="/#projects">Projetos</Link>
             </li>
 
-            {/* <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href="/resume">Currículo</Link>
-            </li> */}
-
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href="/#contact">Contato</Link>
+            </li>
+
+            <li className='ml-10 text-sm uppercase hover:border-b'>
+              <Link href="/resume">Currículo</Link>
             </li>
           </ul>
 
@@ -97,7 +97,7 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <Image src={logoImg} alt="/" width="80" height="80" onClick={() => setnav(false)} />
+                <Image src={logoImg} alt="/" width={80} height={80} onClick={() => setnav(false)} />
               </Link>
 
               <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer text-[#1f2937]'>
@@ -120,10 +120,6 @@ const Navbar = () => {
                 <li onClick={() => setnav(false)} className='py-4 text-sm'>Sobre</li>
               </Link>
 
-              <Link href="/resume">
-                <li onClick={() => setnav(false)} className='py-4 text-sm'>Currículo</li>
-              </Link>
-
               <Link href="/#skills">
                 <li onClick={() => setnav(false)} className='py-4 text-sm'>Skills</li>
               </Link>
@@ -135,19 +131,23 @@ const Navbar = () => {
               <Link href="/#contact">
                 <li onClick={() => setnav(false)} className='py-4 text-sm'>Contato</li>
               </Link>
+
+              <Link href="/resume">
+                <li onClick={() => setnav(false)} className='py-4 text-sm'>Currículo</li>
+              </Link>
             </ul>
 
             <div className='pt-[30%]'>
               <p className='uppercase tracking-widest text-[#5651e5]'>vamos nos conectar</p>
 
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer">
+                <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer" aria-label='Linkedin'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaLinkedinIn />
                   </div>
                 </a>
 
-                <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank">
+                <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
                   <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                     <FaGithub />
                   </div>

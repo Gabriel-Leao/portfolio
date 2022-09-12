@@ -21,13 +21,13 @@ const Main = () => {
           </p>
 
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/in/leao-gabriel" target="_blank" rel="noreferrer" aria-label='Linkedin'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaLinkedinIn />
               </div>
             </a>
 
-            <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank">
+            <a href="https://github.com/Gabriel-Leao" rel="noreferrer" target="_blank" aria-label='Github'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FaGithub />
               </div>
@@ -39,7 +39,7 @@ const Main = () => {
               </div>
             </Link>
 
-            <Link href="/Resume">
+            <Link href="/resume">
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsPersonLinesFill />
               </div>
