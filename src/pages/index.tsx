@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Gabriel Leão da Silva, portfolio" />
         <meta name="author" content="Gabriel Leão da Silva" />
         <meta name="keywords" content="Gabriel Leão, Gabriel Leao, gabriel" />
-        <link rel="icon" href="/assets/foto-perfil.png" />
+        <link rel="icon" href="/assets/images/foto-perfil.png" />
       </Head>
       <Main />
       <About />

@@ -5,13 +5,13 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { useRouter } from 'next/router'
-import logoImg from '../../../public/assets/foto-perfil.png'
+import logoImg from '/public/assets/images/foto-perfil.png'
 
 const Navbar = () => {
   const [nav, setnav] = useState(false)
   const [shadow, setShadow] = useState(false)
-  const [navbg, setNavbg] = useState('')
-  const [navcolor, setNavcolor] = useState('')
+  const [navbg, setNavbg] = useState('#ecf0f3')
+  const [navcolor, setNavcolor] = useState('#1f2937')
   const router = useRouter()
 
   useEffect(() => {
@@ -23,9 +23,6 @@ const Navbar = () => {
     ) {
       setNavbg('transparent')
       setNavcolor('#ecf0f3')
-    } else {
-      setNavbg('#ecf0f3')
-      setNavcolor('#1f2937')
     }
   }, [router])
 
@@ -45,9 +42,9 @@ const Navbar = () => {
 
   return (
     <div style={{
-      backgroundColor: `${navbg}`,
-      color: `${navcolor}`
-    }} className={ shadow 
+      backgroundColor: navbg,
+      color: navcolor
+    }} className={ shadow
       ? 'fixed w-full h-20 shadow-xl z-[100]' 
       : 'fixed w-full h-20 z-[100]'}
     >
@@ -57,7 +54,7 @@ const Navbar = () => {
         </Link>
 
         <div>
-          <ul style={{color: `${navcolor}`}} className='hidden md:flex'>
+          <ul className='hidden md:flex'>
             <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href="/#home">Home</Link>
             </li>

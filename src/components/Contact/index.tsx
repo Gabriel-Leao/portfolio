@@ -5,7 +5,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsPersonLinesFill } from 'react-icons/bs'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
-import ContactImg from '../../../public/assets/contact.jpg'
+import ContactImg from '/public/assets/images/contact.jpg'
 
 const Contact = () => {
   return (

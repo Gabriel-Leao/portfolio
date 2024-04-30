@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import rickMortyImg from '../../../public/assets/projects/rick-morty.png'
+import rickMortyImg from '/public/assets/images/projects/rick-morty.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 

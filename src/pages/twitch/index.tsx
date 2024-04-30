@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import twitchImg from '../../../public/assets/projects/twitch.jpg'
+import twitchImg from '/public/assets/images/projects/twitch.jpg'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 

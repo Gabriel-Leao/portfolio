@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import CepImg from '../../../public/assets/projects/cep.png'
+import CepImg from '/public/assets/images/projects/cep.png'
 import { RiRadioButtonFill } from 'react-icons/ri'
 import Link from 'next/link'
 
