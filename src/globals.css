@@ -6,10 +6,12 @@
   font-family: 'Poppins';
   src: url('../public/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
   url('../public/assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype'),
-  url('../public/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  url('../public/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype'),
+  url('../public/assets/fonts/Poppins/Poppins-Italic.ttf') format('truetype'),
+  url('../public/assets/fonts/Poppins/Poppins-MediumItalic.ttf') format('truetype'),
+  url('../public/assets/fonts/Poppins/Poppins-BoldItalic.ttf') format('truetype');
 
   font-display: swap;
-
 }
 
 

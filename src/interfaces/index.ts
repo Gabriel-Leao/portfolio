@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image"
 
 export interface list {
   ImgSrc: StaticImageData,
-  tecnology: string
+  technology: string
 }
 
 export interface projectItem {

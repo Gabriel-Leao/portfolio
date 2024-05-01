@@ -1,9 +1,9 @@
 import SkillsList from '../SkillsList'
-import htmlImg from '/public/assets/images/skills/html.png'
-import cssImg from '/public/assets/images/skills/css.png'
+import angularImg from '/public/assets/images/skills/angular.png'
+import csImg from '/public/assets/images/skills/csharp.png'
 import tailwindImg from '/public/assets/images/skills/tailwind.png'
 import typescriptImg from '/public/assets/images/skills/Typescript.png'
-import reactImg from '/public/assets/images/skills/react.png'
+import pythonImg from '/public/assets/images/skills/python.png'
 import nextjsImg from '/public/assets/images/skills/nextjs.png'
 import nodeImg from '/public/assets/images/skills/node.png'
 import javaImg from '/public/assets/images/skills/java.png'
@@ -11,36 +11,36 @@ import { list } from '../../interfaces'
 
 const skillsList = [
   {
-    ImgSrc: htmlImg,
-    tecnology: "html"
+    ImgSrc: nextjsImg,
+    technology: "next js"
   },
   {
-    ImgSrc: cssImg,
-    tecnology: "css"
+    ImgSrc: angularImg,
+    technology: "angular"
   },
   {
     ImgSrc: tailwindImg,
-    tecnology: "tailwind"
+    technology: "tailwind"
   },
   {
     ImgSrc: typescriptImg,
-    tecnology: "typescript"
-  },
-  {
-    ImgSrc: reactImg,
-    tecnology: "react"
-  },
-  {
-    ImgSrc: nextjsImg,
-    tecnology: "next js"
+    technology: "typescript"
   },
   {
     ImgSrc: nodeImg,
-    tecnology: "node js"
+    technology: "node js"
+  },
+  {
+    ImgSrc: csImg,
+    technology: "C#"
+  },
+  {
+    ImgSrc: pythonImg,
+    technology: "python"
   },
   {
     ImgSrc: javaImg,
-    tecnology: "java"
+    technology: "java"
   },
 ]
 
@@ -53,7 +53,7 @@ const Skills = () => {
   
         <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
           { skillsList.map(( skills: list, key: number ) => (
-            <SkillsList ImgSrc={ skills.ImgSrc } tecnology={ skills.tecnology } key={ key } /> 
+            <SkillsList ImgSrc={ skills.ImgSrc } technology={ skills.technology } key={ key } />
           ))}
         </div>
       </div>

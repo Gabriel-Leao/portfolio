@@ -10,12 +10,11 @@ const Resume = () => {
           name='description'
           content='I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences.'
         />
-        <link rel='icon' href='/assets/foto-perfil.png' />
       </Head>
 
       <div className='max-w-[940px] mx-auto p-2 pt-[120px]'>
-        <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center'>
-          <h2 className='text-center'>Gabriel Leão da Silva</h2>
+        <div className='bg-[#d0d4d6] my-4 p-4 w-full flex justify-center gap-2 md:justify-between items-center flex-wrap'>
+          <h2 className='text-center text-xl md:text-3xl font-bold'>Gabriel Leão da Silva</h2>
           <div className='flex'>
             <a
               href='https://www.linkedin.com/in/leao-gabriel/'
@@ -52,7 +51,7 @@ const Resume = () => {
         {/* Experience */ }
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold italic'>
+            <span className='font-bold'>
               Catskillet
             </span>
             <span className='px-2'>|</span>São Paulo, SP
@@ -64,12 +63,12 @@ const Resume = () => {
         </div>
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold italic'>
+            <span className='font-bold'>
               Caixa Econômica Federal
             </span>
             <span className='px-2'>|</span>São Bernardo do Campo, SP
           </p>
-          <p className='py-1 italic font-bold'>Estágiario, (Maio 2021 — Dezembro 2021)</p>
+          <p className='py-1 italic font-bold'>Estagiário, (Maio 2021 — Dezembro 2021)</p>
           <p>Atender os clientes, digitalização de documentos. <br />
              Foi a minha primeira experiência profissional e onde pude aprender muito sobre o funcionamento da
              organização, Hierarquia, pontualidade e também no trato com as pessoas.</p>
@@ -81,7 +80,7 @@ const Resume = () => {
         {/* Experience */ }
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold italic'>
+            <span className='font-bold'>
               FIAP
             </span>
             <span className='px-2'>|</span>São Paulo, SP
@@ -96,7 +95,7 @@ const Resume = () => {
 
         <div className='py-6'>
           <p className='italic'>
-            <span className='font-bold italic'>
+            <span className='font-bold'>
               Instituto Proa
             </span>
             <span className='px-2'>|</span>São Paulo, SP
@@ -111,16 +110,17 @@ const Resume = () => {
         {/* Skills */ }
         <div className='text-center py-4'>
           <h5 className='text-center underline text-[18px] py-2'>Skills</h5>
-          <p className='py-2'>
-            <span className='font-bold'>Hard Skills: </span>
-            Front-End Web Developer
-            <span className='px-2'>|</span> HTML <span className='px-2'>|</span>
-            CSS <span className='px-2'>|</span>React
-            <span className='px-2'>|</span>Tailwind
-            <span className='px-2'>|</span> Next.JS
+          <p className="py-2">
+            <span className="font-bold">Hard Skills: </span>
+            Java <span className="px-2">|</span> C# <span className="px-2">|</span> Node.js <span
+            className="px-2">|</span>
+            Angular <span className="px-2">|</span> Python
+            <span className="px-2">|</span> Typescript
+            <span className="px-2">|</span>Tailwind
+            <span className="px-2">|</span> Next.JS
           </p>
 
-          <p className='py-2'>
+          <p className="py-2">
             <span className='font-bold'>Soft Skills: </span>
             Flexibilidade
             <span className='px-2'>|</span> Trabalho em equipe <span className='px-2'>|</span>

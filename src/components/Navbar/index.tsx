@@ -16,20 +16,30 @@ const Navbar = () => {
 
   useEffect(() => {
     if (
-      router.asPath === '/Property' ||
-      router.asPath === '/Netflix' ||
-      router.asPath === '/Crypto' ||
-      router.asPath === '/Twitch'
+      router.asPath === '/rick-morty' ||
+      router.asPath === '/netflix' ||
+      router.asPath === '/cep'
     ) {
       setNavbg('transparent')
       setNavcolor('#ecf0f3')
+    } else {
+      setNavbg('#ecf0f3')
+      setNavcolor('#1f2937')
     }
   }, [router])
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) setShadow(true)
-      else setShadow(false)
+      if (window.scrollY >= 90) {
+        setShadow(true)
+        setNavbg('#ecf0f3')
+        setNavcolor('#1f2937')
+      }
+      else {
+        setShadow(false)
+        setNavbg('transparent')
+        setNavcolor('#ecf0f3')
+      }
     }
 
     window.addEventListener('scroll', handleShadow)
@@ -89,8 +99,8 @@ const Navbar = () => {
       <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''}>
         <div 
           className={ nav
-            ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' 
-            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
+            ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-6 ease-in duration-500'
+            : 'fixed left-[-200%] top-0 p-10 ease-in duration-500'}>
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
