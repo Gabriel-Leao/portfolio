@@ -11,3 +11,12 @@ export interface projectItem {
   title: string,
   subTitle: string
 }
+
+export interface projectPageProps {
+  coverImg: StaticImageData,
+  desc: string,
+  title: string,
+  technologies: string[],
+  linkDemo: string,
+  linkCode: string
+}
