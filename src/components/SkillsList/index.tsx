@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { list } from '../../interfaces'
+import { list } from '../../@types'
 
 const SkillsList = ({ ImgSrc, technology }: list) => {
   return (

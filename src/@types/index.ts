@@ -20,3 +20,15 @@ export interface projectPageProps {
   linkDemo: string,
   linkCode: string
 }
+
+export interface ResumeItemProps {
+  type: 'experience' | 'education'
+  company?: string
+  position?: string
+  institution?: string
+  degree?: string
+  location: string
+  startDate: string
+  endDate: string
+  description: string
+}

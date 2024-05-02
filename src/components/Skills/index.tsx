@@ -7,7 +7,7 @@ import pythonImg from '/public/assets/images/skills/python.png'
 import nextjsImg from '/public/assets/images/skills/nextjs.png'
 import nodeImg from '/public/assets/images/skills/node.png'
 import javaImg from '/public/assets/images/skills/java.png'
-import { list } from '../../interfaces'
+import { list } from '../../@types'
 
 const skillsList = [
   {
@@ -47,7 +47,7 @@ const skillsList = [
 const Skills = () => {
   return (
     <div className='w-full lg:h-screen p-2' id='skills'>
-      <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
+      <div className='container mx-auto flex flex-col justify-center h-full'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>skills</p>
         <h2 className='capitalize py-4'>o que eu posso fazer</h2>
   

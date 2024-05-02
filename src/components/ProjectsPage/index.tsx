@@ -1,5 +1,5 @@
 import { RiRadioButtonFill } from 'react-icons/ri'
-import { projectPageProps } from '../../interfaces'
+import { projectPageProps } from '../../@types'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -10,7 +10,7 @@ const ProjectsPage = ({ coverImg, title, desc, technologies, linkDemo, linkCode 
         <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
         <Image className='absolute z-1' src={coverImg} layout='fill' objectFit='cover' alt='/' />
         <div
-          className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-[#fff] p-2 z-10'>
+          className='absolute top-[70%] container w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-[#fff] p-2 z-10'>
           <h2 className='capitalize py-2'>{title}</h2>
           <h3 className='capitalize'>
             { technologies.map((tech, index) => (
@@ -20,7 +20,7 @@ const ProjectsPage = ({ coverImg, title, desc, technologies, linkDemo, linkCode 
         </div>
       </div>
 
-      <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-6 lg:grid-cols-5 gap-8 pt-8'>
+      <div className='container mx-auto p-2 grid md:grid-cols-6 lg:grid-cols-5 gap-8 pt-8'>
         <div className='col-span-4'>
           <p>Projeto</p>
           <h2 className='py-4'>Overview</h2>

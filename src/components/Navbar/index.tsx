@@ -12,13 +12,13 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false)
   const [navbg, setNavbg] = useState('#ecf0f3')
   const [navcolor, setNavcolor] = useState('#1f2937')
-  const router = useRouter()
+  const router = useRouter().asPath
 
   useEffect(() => {
     if (
-      router.asPath === '/rick-morty' ||
-      router.asPath === '/netflix' ||
-      router.asPath === '/cep'
+      router === '/rick-morty' ||
+      router === '/netflix' ||
+      router === '/cep'
     ) {
       setNavbg('transparent')
       setNavcolor('#ecf0f3')
@@ -38,12 +38,17 @@ const Navbar = () => {
       else {
         setShadow(false)
         setNavbg('transparent')
-        setNavcolor('#ecf0f3')
+        if (
+          router === '/rick-morty' ||
+          router === '/netflix' ||
+          router === '/cep'
+        ) setNavcolor('#ecf0f3')
+        else setNavcolor('#1f2937')
       }
     }
 
     window.addEventListener('scroll', handleShadow)
-  }, [])
+  }, [router])
   
 
   const handleNav = () => {

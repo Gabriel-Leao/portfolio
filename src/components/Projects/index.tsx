@@ -1,9 +1,8 @@
 import rickMortyImg from '/public/assets/images/projects/rick-morty.png'
 import cepImg from '/public/assets/images/projects/cep.png'
 import netflixImg from '/public/assets/images/projects/netflix.jpg'
-// import twitchImg from '/public/assets/images/projects/twitch.jpg'
-import { projectItem } from '../../interfaces'
 import ProjectItem from '../ProjectItem'
+import { projectItem } from '../../@types'
 
 const projectList = [
   {
@@ -23,19 +22,13 @@ const projectList = [
     title: "netflix",
     subTitle: "react js",
     link: "/netflix"
-  },
-  // {
-  //   imgSrc: twitchImg,
-  //   title: "twitch",
-  //   subTitle: "react js",
-  //   link: "/twitch"
-  // },
+  }
 ]
 
 const Projects = () => {
   return (
     <div className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16" id="projects">
+      <div className="container mx-auto px-2 py-16" id="projects">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">projeto</p>
         <h2 className="py-4 capitalize">o que já fiz</h2>
         <div className="grid md:grid-cols-2 gap-8">

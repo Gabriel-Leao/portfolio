@@ -9,7 +9,7 @@ import ContactImg from '/public/assets/images/contact.jpg'
 
 const Contact = () => {
   return (
-    <div id='contact' className='max-w-[1240px] m-auto px-2 pt-16 w-full'>
+    <div id='contact' className='container m-auto px-2 pt-16 w-full'>
       <p className='uppercase tracking-widest text-[#5651e5] text-xl'>Contato</p>
       <h2 className='py-4 capitalize'>entrar em contato</h2>
       <div className='md:grid lg:grid-cols-5 gap-8'>
@@ -102,7 +102,6 @@ const Contact = () => {
         </Link>
       </div>
     </div>
-
   )
 }
 
