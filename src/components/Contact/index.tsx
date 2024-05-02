@@ -21,7 +21,7 @@ const Contact = () => {
 
             <div className="text-center lg:text-left">
               <h2 className='py-2 capitalize'>Gabriel leão</h2>
-              <p className='capitalize'>desenvolvedor front-end</p>
+              <p className='capitalize'>desenvolvedor full-stack</p>
               <p className='py-4'>Estou disponível para PJ ou CLT. Entre em contato e vamos conversar.</p>
             </div>
 
@@ -84,7 +84,7 @@ const Contact = () => {
               </div>
 
               <div className='flex flex-col py-2'>
-                <label className='uppercase text-sm py-2' htmlFor='text'>messagem</label>
+                <label className='uppercase text-sm py-2' htmlFor='text'>mensagem</label>
                 <textarea className='border-2 rounded-lg p-3 border-gray-300 focus:outline-none' rows={10} name='mensagem' id='text'></textarea>
               </div>
 
