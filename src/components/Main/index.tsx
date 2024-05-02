@@ -13,11 +13,11 @@ const Main = () => {
           </h1>
 
           <h1 className='py-2 text-gray-700 capitalize'>
-            um desenvolvedor front-end
+            um desenvolvedor full-stack
           </h1>
 
           <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-            Estou focado no layout visual, interface, interação e experiência do usuário.
+            Desenvolvo full-stack, cuidando do layout e da lógica para criar experiências completas e intuitivas para os usuários.
           </p>
 
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>

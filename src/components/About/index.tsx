@@ -11,16 +11,23 @@ const About = () => {
 
           <h2 className="py-4 capitalize">quem sou eu</h2>
 
-          <p className="py-2 text-gray-600">Eu não sou seu desenvolvedor comum</p>
-
-          <p className="py-2 text-gray-600">
-            Sou uma pessoa tranquila e introvertida que gosta muito de Livros, Video Games e Rock N Roll. Já fui estagiário na Caixa Econômica Federal, foi a minha primeira experiência profissional e onde pude aprender muito sobre o funcionamento da organização, Hierarquia, pontualidade e também no trato com as pessoas, mas hoje pretendo ser um programador Web.
-          </p>
-
-          <p className="py-2 text-gray-600">
-            Fui aluno no Instituto Proa, fiz o curso PROPROFISSÃO que durante 4 meses desenvolve as competências técnicas e comportamentais essenciais para desenvolvedores.
-            Durante ele pude aprender: Comunicação assertiva, HTML, CSS, Javascript, React, Banco de Dados, Java.
-            Essas competências foram desenvolvidas por meio de trabalhos em grupos, projetos e atividades.
+          <p className="py-4 text-gray-600">
+            Sou um programador apaixonado pela área, com experiência em desenvolvimento web.
+            Sou autodidata e sempre busco aprender novas tecnologias. Em 2022, concluí um curso
+            profissionalizante na área de programação oferecido pela ONG Proa, fortalecendo minhas
+            habilidades e adquirindo conhecimentos práticos essenciais para o mercado.
+            <br/><br/>
+            Atualmente, estou cursando Engenharia de Software na FIAP. Essa experiência
+            complementa minha formação, preparando-me para enfrentar desafios mais complexos na
+            área de tecnologia e integrando conhecimentos teóricos com a prática adquirida durante o
+            curso.
+            <br/><br/>
+            Tenho a flexibilidade de atuar tanto como front-end quanto back-end, buscando sempre
+            expandir minha expertise e contribuir de maneira eficaz para os projetos em que me
+            envolvo.
+            Sou um profissional motivado e dedicado, com forte capacidade de aprendizagem e
+            trabalho em equipe. Tenho certeza de que posso contribuir para o crescimento da sua
+            empresa.
           </p>
 
           <Link href="/#projects">

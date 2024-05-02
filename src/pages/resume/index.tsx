@@ -35,15 +35,13 @@ const Resume = () => {
         </div>
 
         <div className='text-center py-4 text-xl font-bold uppercase tracking-wider'>
-          <p className='capitalize'>front-end developer JR.</p>
+          <p className='capitalize'>full-stack developer JR.</p>
         </div>
 
         <p>
           Olá meu nome é Gabriel Leão e se você está procurando por um programador, você veio ao lugar certo. <br />
           <br />
-          Toda empresa precisa de pessoas competentes e comunicativas, por isso eu tenho certeza que posso contribuir
-          para o crescimento, aumento de produtividade e de lucro da sua instituição. Entre em contato e poderemos falar
-          mais sobre.
+          Sou focado no desenvolvimento full-stack, cuidando tanto do layout e interface do usuário quanto da lógica e funcionalidade do sistema. Busco criar experiências completas e satisfatórias para os usuários, combinando habilidades front-end e back-end.
         </p>
 
         <h5 className='text-center underline text-[18px] py-4'>
