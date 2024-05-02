@@ -3,6 +3,8 @@ import ResumeItem from '../../components/ResumeItem'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Resume = () => {
+  const hardSkills = ['Java', 'C#', 'Node.js', 'Angular', 'Python', 'Typescript', 'Tailwind', 'Next.JS']
+  const softSkills = ['Flexibilidade', 'Trabalho em equipe', 'Determinação', 'Comunicação', 'Empatia']
   return (
     <>
       <Head>
@@ -105,18 +107,36 @@ const Resume = () => {
         {/* Skills */ }
         <div className='lg:text-center py-4'>
           <h5 className='text-center underline text-[18px] py-2'>Skills</h5>
-          <p className="py-2">
-            <span className="font-bold">Hard Skills: </span>
-            Java<span className="px-2">|</span>C#<span className="px-2">|</span>Node.js<span
-            className="px-2">|</span>Angular<span className="px-2">|</span>Python
-            <span className="px-2">|</span> Typescript<span className="px-2">|</span>Tailwind<span className="px-2">|</span> Next.JS
-          </p>
-
-          <p className="py-2">
-            <span className='font-bold'>Soft Skills: </span>
-            Flexibilidade<span className='px-2'>|</span>Trabalho em equipe<span className='px-2'>|</span>
-            Determinação<span className='px-2'>|</span>Comunicação<span className='px-2'>|</span>Empatia
-          </p>
+          <div className="py-4">
+            <span className='text-center block lg:inline text-[18px] p-2 font-bold'>Hard Skills:</span>
+            <ul className='flex md:inline-flex gap-4 flex-wrap flex-col md:flex-row items-center'>
+              {hardSkills.map((skill, index) => (
+                <li key={index}>
+                  {index === hardSkills.length - 1 ?
+                    skill :
+                    <>
+                      {skill} <span className="hidden md:inline px-2">|</span>
+                    </>
+                  }
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="py-4">
+            <span className='text-center block lg:inline text-[18px] p-2 font-bold'>Soft skills:</span>
+            <ul className='flex md:inline-flex gap-4 flex-col md:flex-row items-center'>
+              {softSkills.map((skill, index) => (
+                <li key={ index }>
+                  {index === softSkills.length - 1 ?
+                    skill :
+                    <>
+                      { skill } <span className="hidden md:inline px-2">|</span>
+                    </>
+                  }
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </>
